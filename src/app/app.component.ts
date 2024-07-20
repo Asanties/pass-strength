@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PasswordStrengthComponent } from './password-strength/password-strength.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [PasswordStrengthComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pass-check';
+  title = 'password-strength';
 }
