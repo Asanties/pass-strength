@@ -45,7 +45,11 @@ export class PasswordStrengthComponent {
   }
 
   getIndicatorClass(position: number): string {
-    if (this.passwordStrength === 'empty' || this.passwordStrength === 'short') {
+        if (this.passwordStrength === 'empty') {
+      return 'gray';
+    }
+
+    if (this.passwordStrength === 'short') {
       return 'red';
     }
 
